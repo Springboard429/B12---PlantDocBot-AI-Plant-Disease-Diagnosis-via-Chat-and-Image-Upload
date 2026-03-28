@@ -37,6 +37,32 @@ cd ..
 - `notebooks/`: Training and experimentation notebooks
 - `scripts/`: Utility and local inference scripts
 
+## Model Assets (Required)
+
+The backend loads models from `assets/models/` using fixed paths in the codebase:
+
+- Image model path used by `api/services/image_model.py`:
+	- `assets/models/simplecnn/best_simplecnn_plant_disease.pth`
+
+- Text model path used by `api/services/text_model.py`:
+	- `assets/models/distilbert_plantdisease_model/`
+
+### Expected directory structure
+
+```text
+assets/
+└── models/
+		├── simplecnn/
+		│   └── best_simplecnn_plant_disease.pth
+		└── distilbert_plantdisease_model/
+				├── config.json
+				├── model.safetensors
+				├── tokenizer.json
+				└── tokenizer_config.json
+```
+
+If the files are not in these locations, the API will fail to load models at startup.
+
 ## Run Backend
 
 ```bash
