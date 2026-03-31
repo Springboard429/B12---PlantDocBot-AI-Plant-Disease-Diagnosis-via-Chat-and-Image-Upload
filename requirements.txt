@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+torch
+torchvision
+transformers
+scikit-learn
+pillow
+numpy
+python-multipart
+sentencepiece
+protobuf
