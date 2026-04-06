@@ -1,13 +1,22 @@
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
 
 # Python cache
 __pycache__/
 *.pyc
 
-# Dataset
-dataset/
-*.zip
+# Local temp and generated output
+.codex-temp-rebase-backup/
+converted_docs/
+temp_*.JPG
 
-# Jupyter checkpoints
+# App and notebook artifacts
 .ipynb_checkpoints/
+
+# Local datasets and training outputs
+dataset/
+data/
+processed/
+models/
+*.zip
