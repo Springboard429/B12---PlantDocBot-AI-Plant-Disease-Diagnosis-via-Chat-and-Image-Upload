@@ -34,11 +34,21 @@ def predict_disease(text):
     with torch.no_grad():
         outputs = model(**inputs)
 
-    predicted_class = torch.argmax(outputs.logits, dim=1).item()
+# convert logits → probabilities
+    probs = torch.softmax(outputs.logits, dim=1)
+
+# get predicted class
+    predicted_class = torch.argmax(probs, dim=1).item()
+
+# get confidence (probability of predicted class)
+    confidence = probs[0][predicted_class].item()
 
     disease = encoder.inverse_transform([predicted_class])[0]
 
-    return disease
+    return {
+    "disease": disease,
+    "confidence": confidence
+}
 
 
 # -----------------------------

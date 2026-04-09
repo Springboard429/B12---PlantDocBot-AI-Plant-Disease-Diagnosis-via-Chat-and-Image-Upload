@@ -60,7 +60,7 @@ NUM_CLASSES = 38
 
 model = SimpleCNN(NUM_CLASSES)
 
-model_path = "../notebooks/cnn_best_92_plant_disease_model.pth"
+model_path = "models/cnn_best_92_plant_disease_model.pth"
 
 state_dict = torch.load(model_path, map_location=device)
 
@@ -155,18 +155,7 @@ def predict_image(image_path):
     confidence = confidence.item()*100
 
 
-    # -------- SHOW IMAGE --------
-    plt.figure(figsize=(6,6))
-    plt.imshow(image)
-    plt.title(f"Prediction: {predicted_class}\nConfidence: {confidence:.2f}%")
-    plt.axis("off")
-    plt.show()
-
-
-    print("\n Prediction Result")
-    print("---------------------")
-    print("Predicted Class:", predicted_class)
-    print(f"Confidence: {confidence:.2f}%")
+    return predicted_class, confidence
 
 
 # =========================

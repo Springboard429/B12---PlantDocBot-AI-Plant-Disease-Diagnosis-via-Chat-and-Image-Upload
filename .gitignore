@@ -11,3 +11,6 @@ dataset/
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Frontend
+node_modules/
