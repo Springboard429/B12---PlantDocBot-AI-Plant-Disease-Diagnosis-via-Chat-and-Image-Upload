@@ -1,0 +1,84 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e8f5e9; 
+  margin: 0;
+  padding: 40px 20px;
+  /* Ensure the heading and everything else stays centered */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+}
+
+/* 1. Style the heading (now sitting outside) */
+h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-top: 0;
+  margin-bottom: 50px; /* Space above the first box */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* 2. Targeted Card Styling (Apply this class in your TSX) */
+.prediction-card {
+  background-color: #ffffff; /* White background only here */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 30px; /* Space between the two boxes */
+  width: 100%;
+  max-width: 500px;
+  border-top: 8px solid #2e7d32; /* Top green border */
+  box-sizing: border-box; /* Stops padding from breaking width */
+}
+
+/* 3. Subheadings (inside the card) */
+h2 {
+  color: #388e3c;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* 4. Typing space and Inputs */
+textarea, input[type="file"] {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #c8e6c9;
+  border-radius: 10px;
+  background-color: #fcfdfc;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* 5. Result box style (Dashed) */
+p {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f8e9;
+  border: 1px dashed #a5d6a7;
+  border-radius: 10px;
+  color: #1b5e20;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 6. Dark Green Button */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1b5e20; /* Dark Green */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #2e7d32;
+  transform: translateY(-2px);
+}
