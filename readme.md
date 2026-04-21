@@ -14,62 +14,119 @@ An AI-powered system for detecting plant diseases using:
 
 │
 ├── api/                         # Backend (FastAPI)
+
 │   ├── routers/                # API endpoints
+
 │   │   └── predict.py          # Handles prediction requests
+
 │   ├── services/               # Core logic for models
+
 │   │   ├── image_model.py      # Image model inference logic
+
 │   │   └── text_model.py       # Text model inference logic
+
 │   ├── main.py                 # FastAPI app entry point
+
 │   └── models.py               # Request/response schemas
+
 │
+
 ├── frontend/                   # Frontend (React + Vite)
+
 │   ├── node_modules/           # Installed dependencies (ignored in Git)
+
 │   ├── public/                 # Static assets
+
 │   │   ├── favicon             # Website icon
+
 │   │   └── icons               # UI icons
+
 │   │
+
 │   ├── src/                    # Main frontend source code
+
 │   │   ├── App.tsx             # Main UI component
+
 │   │   ├── App.css             # App styling
+
 │   │   ├── index.css           # Global styles
+
 │   │   └── main.tsx            # React entry point
+
 │   │
+
 │   ├── .env.example            # Example environment variables
+
 │   ├── .gitignore
+
 │   ├── eslint.config.js        # ESLint configuration
+
 │   ├── index.html              # Root HTML file
+
 │   ├── package.json            # Project dependencies
+
 │   ├── package-lock.json
+
 │   ├── README.md               # Frontend documentation
+
 │   ├── tsconfig.app.json
+
 │   ├── tsconfig.json
+
 │   ├── tsconfig.node.json
+
 │   └── vite.config.ts          # Vite config
+
 │
+
 ├── models/                     # Trained AI models (Download from Google Drive)
+
 │   ├── image_model/
+
 │   │   └── best_cnn_plantdoc.pth   # Download from Drive
+
 │   │
+
 │   └── text_model/
+
 │       └── plant_disease_modelc/    # Download entire folder from Drive
+
 │           ├── classes.json
+
 │           ├── config.json
+
 │           ├── model.safetensors
+
 │           ├── plantvillage.parquet
+
 │           ├── tokenizer.json
+
 │           ├── tokenizer_config.json
+
 │           └── training_args.bin
+
 │
+
 ├── notebooks/                  # Jupyter notebooks
+
 │   ├── plantdoc_eda.ipynb      # Exploratory Data analysis
+
 │   ├── preprocessing.ipynb     # Data cleaning, preprocessing, and augmentation
+
 │   ├── training.ipynb          # Training CNN model for image classification
+
 │   └── training_text_model.ipynb   # Training NLP model for symptom-based
+
 │
+
 ├── docs/                       # Additional documentation
+
 ├── venv/                       # Virtual environment (not uploaded)
+
 ├── .gitattributes
+
 ├── .gitignore
+
 └── requirements.txt            # Python dependencies
 
 ```
@@ -90,17 +147,29 @@ Place files exactly like this:
 ```
 
 models/
+
 ├── image_model/
+
 │   └── best_cnn_plantdoc.pth
+
 │
+
 └── text_model/
+
     └── plant_disease_modelc/
+    
         ├── classes.json
+   
         ├── config.json
+       
         ├── model.safetensors
+        
         ├── plantvillage.parquet
+        
         ├── tokenizer.json
+        
         ├── tokenizer_config.json
+        
         └── training_args.bin
 
 ````
