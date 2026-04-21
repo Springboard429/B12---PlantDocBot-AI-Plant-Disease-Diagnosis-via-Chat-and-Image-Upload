@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+:root {
+  --page-a: #0f172a;
+  --page-b: #1e293b;
+
+  --panel-1: rgba(30, 41, 59, 0.85);
+  --panel-2: rgba(15, 23, 42, 0.85);
+
+  --line-soft: rgba(148, 163, 184, 0.15);
+  --line-strong: rgba(148, 163, 184, 0.35);
+
+  --text-main: #e2e8f0;
+  --text-highlight: #f8fafc;
+  --text-dim: #94a3b8;
+
+  --focus-ring: #38bdf8;
+  --chip-bg: rgba(59, 130, 246, 0.2);
+
+  font-family: 'Source Sans 3', 'Segoe UI', sans-serif;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--text-main);
+  background-color: var(--page-a);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+  radial-gradient(circle at 10% 10%, rgba(56, 189, 248, 0.2), transparent 40%),
+  radial-gradient(circle at 90% 90%, rgba(168, 85, 247, 0.2), transparent 40%),
+  linear-gradient(135deg, var(--page-a), var(--page-b));
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Syne', 'Trebuchet MS', sans-serif;
+  line-height: 1.08;
+  color: var(--text-highlight);
+}
+
+h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #38bdf8; /* blue */
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 0 20px rgba(246, 248, 247, 0.5);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
