@@ -14,7 +14,6 @@ An AI-powered system for detecting plant diseases using:
 
 │
 ├── api/                         # Backend (FastAPI)
-
 │   ├── routers/                # API endpoints
 │   │   └── predict.py          # Handles prediction requests
 │   ├── services/               # Core logic for models
