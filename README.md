@@ -16,6 +16,8 @@ PlantDocBot is an AI-powered application designed to detect plant diseases from 
 ---
 
 ## Project Structure
+
+```
 B12---PlantDocBot-AI-Plant-Disease-Diagnosis-via-Chat-and-Image-Upload/
 │
 ├── backend/
@@ -45,6 +47,7 @@ B12---PlantDocBot-AI-Plant-Disease-Diagnosis-via-Chat-and-Image-Upload/
 ├── LICENSE
 ├── .gitignore
 └── README.md
+```
 
 ---
 
