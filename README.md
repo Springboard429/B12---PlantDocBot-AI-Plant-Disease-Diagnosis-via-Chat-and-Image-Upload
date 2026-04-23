@@ -1,6 +1,6 @@
 # PlantDocBot – AI Plant Disease Detection and Assistant
 
-PlantDocBot is an AI-powered application designed to detect plant diseases from images and provide intelligent insights using machine learning and natural language processing. It integrates computer vision and NLP models within a full-stack web application to deliver an interactive plant disease prediction assistant.
+PlantDocBot is an intelligent plant disease diagnosis system that integrates image processing and natural language processing techniques to analyze plant leaf images and user-described symptoms. It enables users to obtain reliable disease predictions and insights through a unified, AI-driven interface.
 
 ---
 
@@ -83,8 +83,6 @@ The notebooks directory contains all workflows related to model development:
 - 07_text_model_inference: Text model inference  
 
 ---
-
-## Installation and Setup
 
 ## Installation and Setup
 
