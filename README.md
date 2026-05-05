@@ -27,6 +27,7 @@ Tech Stack
 
 
 Project Structure
+```
 
 ├── frontend/
 │   ├── src/
@@ -45,7 +46,7 @@ Project Structure
 │
 └── README.md
 
-
+```
 
 How It Works
 
