@@ -1,3 +1,4 @@
+```
 Plant Disease Diagnosis via Image Upload and Chatbot
 
 Overview
@@ -78,6 +79,6 @@ cd frontend
 npm install
 npm run dev
 
-
+```
 
  
