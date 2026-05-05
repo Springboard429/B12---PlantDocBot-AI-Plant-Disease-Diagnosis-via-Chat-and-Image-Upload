@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+env/
+venv/
+__pycache__/
+
+# Datasets and large images
+data/dataset_raw.csv
+data/dataset.csv
+plantvillage_local/
+dataset/
+
+# Models and checkpoints
+models/best_model.pth
+models/fine_tuned_model/
+models/checkpoints/
+*.pth
+*.keras
+*.h5
+
+# Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+
+# Notebooks
+.ipynb_checkpoints/
