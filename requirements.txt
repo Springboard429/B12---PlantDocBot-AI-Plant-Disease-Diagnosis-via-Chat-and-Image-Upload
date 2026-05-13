@@ -1,0 +1,42 @@
+# =============================================================================
+# PlantDocBot — Python Backend Requirements
+# =============================================================================
+# Install with:  pip install -r requirements.txt
+# Python version: 3.9+
+# =============================================================================
+
+# ---------- Web Framework & Server ----------
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12        # Required for FastAPI Form / File uploads
+
+# ---------- Deep Learning — PyTorch (CPU) ----------
+# For GPU (CUDA 11.8) support, replace with:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+torch==2.4.1
+torchvision==0.19.1
+
+# ---------- NLP — HuggingFace Transformers ----------
+transformers==4.44.2
+tokenizers==0.19.1
+
+# ---------- ML Utilities ----------
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# ---------- Image Processing ----------
+Pillow==10.4.0
+
+# ---------- Numerical Computing ----------
+numpy==1.26.4
+
+# ---------- Visualization (used in inference scripts / notebooks) ----------
+matplotlib==3.9.2
+
+# ---------- Jupyter Notebooks ----------
+jupyter==1.1.1
+notebook==7.2.2
+ipykernel==6.29.5
+
+# ---------- Miscellaneous ----------
+tqdm==4.66.5                    # Progress bars during training
